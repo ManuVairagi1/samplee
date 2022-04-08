@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.my-section{
+    background-color: #f6f6f6;
+    margin-top: 160px;
+}
+.my-section > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+.my-section hr{
+    width: 40px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: red;
+}
+.my-section > p{
+    text-align: center;
+    color: blue;
+    margin-top: 15px;
+}
+.my-section > div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.my-section > div div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-section > div img{
+    height: 400px;
+    width: 400px;
+}
+.my-section h4{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.my-section > div div:nth-child(2){
+    line-height: 40px;
+}
+.my-section ul li{
+    list-style: none;
+}
+.my-section i{
+    color: blue;
+}
+@media (max-width:1282px){
+    .my-section > div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .my-section > div{
+        text-align: center;
+    }
+}
+@media (max-width:480px){
+    .my-section > div img{
+        height: 250px;
+        width: 250px;
+    }
+}

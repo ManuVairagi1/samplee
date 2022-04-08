@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #212529;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+footer > div{
+    /* border: 2px solid #333; */
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+}
+.contact-info h1{
+    /* padding-left: 10px; */
+    color: white;
+}
+.contact-info hr{
+    margin-top: 10px;
+    width: 25%;
+    background-color: white;
+    height: 2px;
+}
+.contact-info > div{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contact-info > div div:nth-child(1){
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.contact-info > div div:nth-child(1) img{
+    height: 50px;
+    width: 50px;
+}
+.contact-info > div div p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    transition: all 0.4s;
+}
+.contact-info > div div p:hover{
+    color: magenta;
+    cursor: pointer;
+}
+.contact-info > div div p:nth-child(2){
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.social-icons{
+    height: 20px;
+    width: 20px;
+    margin-right: 25px;
+}
+.quick-links h1{
+    color: white;
+}
+.quick-links hr{
+    margin-top: 10px;
+    width: 25%;
+    background-color: white;
+    height: 2px;
+}
+.quick-links div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.quick-links div a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+.quick-links div a:hover{
+    color: magenta;
+}
+.instagram h1{
+    color: white;
+}
+.instagram hr{
+    margin-top: 10px;
+    width: 25%;
+    background-color: white;
+    height: 2px;
+}
+.instagram div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.instagram div img{
+    height: 100px;
+    width: 100px;
+    margin: 4px;
+    transition: all 0.5s;
+}
+.instagram div img:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#lightbox{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+}
+#lightbox.active-lightbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img{
+    max-height: 90%;
+    max-width: 90%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+/* media queries */
+
+@media (max-width:1299px){
+    footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media (max-width:368px){
+    .instagram div img{
+        height: 80px;
+        width: 80px;
+    }
+    .contact-info > div div p{
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 400;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        transition: all 0.4s;
+    }
+    .contact-info > div div p:nth-child(2){
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .contact-info{
+        margin-bottom: -20px;
+    }  
+}

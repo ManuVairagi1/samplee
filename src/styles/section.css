@@ -1,0 +1,16 @@
+.section2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px; 
+}
+h5{
+    color: rgb(26, 26, 215);
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight:bold;
+}
+.chekk{
+    padding-bottom: 10px;
+}

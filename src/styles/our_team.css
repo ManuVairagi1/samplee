@@ -1,0 +1,91 @@
+body{
+    background: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    overflow-x: hidden;
+}
+.our-team{
+    margin-block-end: 40px;
+}
+.first-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-team h2:nth-child(1){
+    text-align: center;
+    color: #00f;
+    font-size: 1.8rem;
+    margin-top: 60px;
+}
+.member-box div:nth-child(2) p:nth-child(1){
+    text-align: center;
+    color: #00f;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+.member-box div:nth-child(2) p:nth-child(2){
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.our-team h2:nth-child(2){
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+}
+.post{
+    width: 400px;
+    height: 500px;
+    position: relative;
+    cursor: pointer;
+}
+.post:hover .post-s{
+    width: 400px;
+}
+.post img{
+    display: block;
+    width: 400px;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid red;
+    box-shadow: 8px 8px 7px 3px black;
+}
+.post-s{
+    width: 0px;
+    height: 500px;
+    /* background-color: rgba(110, 107, 113, 0.71); */
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+.post-s h2{
+    color: white;
+    /* border: 6px solid white; */
+    padding: 5px 5px;
+}
+.post-s h2 a{
+    margin: 10px 16px;
+}
+
+/* media queries */ 
+
+@media (max-width:420px){
+    .post{
+        width: 300px;
+    }
+    .post img{
+        width: 300px;
+    }
+    .post:hover .post-s{
+        width: 300px;
+    }
+}
