@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.solutions-sec{
+    /* background: #f0f0f0; */
+    padding: 40px 20px 10px 10px;
+    margin-top: 10px;
+}
+.solutions-sec hr{
+    margin: 0 auto;
+    width: 80px;
+    background-color: red;
+    /* height: 20px; */
+}
+.solutions-sec h1{
+    text-align: center;
+    font-size: 3.4rem;
+}
+.my-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.my-grid img{
+    height: 400px;
+    width: 400px;
+}
+.my-grid div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-grid div:nth-child(2) p:nth-child(1){
+    margin-top: 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.my-grid div:nth-child(2) p:nth-child(2){
+    font-size: 1.2rem;
+    line-height: 40px;
+    word-spacing: 6px;
+}
+.my-grid .buttons div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+.my-grid .buttons div button{
+    margin-right: 60px;
+    font-size: 1.6rem;
+    padding: 4px 30px 4px 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    transition: color, border 300ms ease-in-out;
+    border: 1px solid green;
+}
+.my-grid .buttons div button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: blue;
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.my-grid .buttons div button:hover::before,
+.my-grid .buttons div button:focus::before{
+    transform: scaleX(1);
+}
+.my-grid .buttons div button:hover,
+.my-grid .buttons div button:focus{
+    color: white;
+    border: none;
+}
+.my-grid .buttons div button i{
+    color: blue;
+}
+.my-grid .buttons div button:hover > i{
+    color: white;
+}
+
+@media (max-width:1000px){
+    .my-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .my-grid .buttons div button{
+        display: inline !important;
+    }
+}
+@media (max-width:510px){
+    .my-grid .buttons div button{
+    margin-right: 60px;
+    font-size: 1rem;
+    /* padding: 4px 30px; */
+    padding: 2px 20px 2px 10px;
+    }
+    .my-grid img{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media (max-width:390px){
+    .my-grid .buttons div button{
+        font-size: 0.8rem;
+        padding-right: 2px 10px 10px 2px;
+        margin-right: 20px;
+    }
+}
+
+
+

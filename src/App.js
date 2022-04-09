@@ -11,6 +11,7 @@ import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import MyHeader from './components/MyHeader';
 import Features from './components/Features';
+import Cards from './components/Cards';
 // import Section3 from './components/Section3';
 
 import {
@@ -25,9 +26,10 @@ function App() {
     <>
     <Router>
       <MyHeader/>
+      <Cards/>
       <Features/>
-      <Experience/>
-      <Header/>
+      {/* <Experience/> */}
+      {/* <Header/> */}
       <Solutions/>
       <Home/>
       {/* <Section/> */}

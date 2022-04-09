@@ -2,6 +2,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
+    <>
     <div>
       <div className=' container-fluid flex m-auto pt-24 mx-30 '>
 
@@ -37,6 +38,7 @@ const Experience = () => {
 
       </div>
     </div>
+    </>
   )
 }
 
